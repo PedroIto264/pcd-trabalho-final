@@ -134,7 +134,7 @@ double compare_results(double** C1, double** C2, int size) {
 
 int main() {
     // Configurações de número de threads para teste
-    int thread_counts[] = {1, 2, 4, 8, 16};
+    int thread_counts[] = {1, 2, 4, 8, 16, 32, 64};
     int num_tests = sizeof(thread_counts) / sizeof(thread_counts[0]);
 
     // Configuração da simulação
