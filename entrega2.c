@@ -194,7 +194,7 @@ int main() {
            "Threads", "Tempo Sequencial", "Tempo OpenMP", "Tempo CUDA", "Speedup", "Precisão");
     
     for (int test = 0; test < num_tests; test++) {
-        int num_threads = thread_coufnts[test];
+        int num_threads = thread_counts[test];
         omp_set_num_threads(num_threads);
         
         double** C_seq = allocate_2d_array(config.grid_size);
